@@ -1,0 +1,3 @@
+# Keep LF everywhere: Prettier formats with LF, so a CRLF checkout on Windows
+# would fail format:check in files nobody edited.
+* text=auto eol=lf

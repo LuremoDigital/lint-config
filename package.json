@@ -1,0 +1,58 @@
+{
+    "name": "@luremo/lint-config",
+    "version": "1.0.0",
+    "description": "ESLint and Prettier configuration for Vite, Vue and TypeScript projects.",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LuremoDigital/lint-config.git"
+    },
+    "type": "module",
+    "exports": {
+        "./eslint": {
+            "types": "./eslint.d.ts",
+            "default": "./eslint.js"
+        },
+        "./prettier": {
+            "types": "./prettier.d.ts",
+            "default": "./prettier.js"
+        }
+    },
+    "files": [
+        "eslint.js",
+        "eslint.d.ts",
+        "prettier.js",
+        "prettier.d.ts"
+    ],
+    "engines": {
+        "node": ">=20.19"
+    },
+    "scripts": {
+        "test": "node --test \"test/*.test.js\"",
+        "format": "prettier . --write",
+        "format:check": "prettier . --check"
+    },
+    "dependencies": {
+        "@eslint/js": "^9.39.5",
+        "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
+        "@stylistic/eslint-plugin": "^5.10.0",
+        "@tanstack/eslint-plugin-query": "^5.104.1",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-playwright": "^2.12.0",
+        "eslint-plugin-vue": "^10.11.1",
+        "globals": "^16.5.0",
+        "prettier-plugin-organize-attributes": "^1.0.0",
+        "prettier-plugin-tailwindcss": "^0.8.1",
+        "typescript-eslint": "^8.71.0"
+    },
+    "peerDependencies": {
+        "eslint": "^9.39.0",
+        "prettier": "^3.0.0",
+        "typescript": ">=5.6.0 <6.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^9.39.5",
+        "prettier": "^3.9.9",
+        "typescript": "^6.0.3"
+    }
+}
